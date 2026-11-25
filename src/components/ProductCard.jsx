@@ -3,7 +3,6 @@ import styles from '../styles/ProductCard.module.css';
 
 const ProductCard = ({ product, onRemove }) => {
   return (
-    // <div className={`${styles.card} ${!product.available ? styles.outOfStock : ''}`}>
    <div className={`${styles.card} ${!product.inStock ? `${styles.outOfStock} outOfStockClass` : ''}`}>
   <h3>{product.name}</h3>
   <p>${product.price}</p>
